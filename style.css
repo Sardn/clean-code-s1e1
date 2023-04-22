@@ -69,7 +69,7 @@ button:hover {
 .new-tasks-input {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
 }
 
 .new-tasks-inner {
@@ -121,7 +121,6 @@ li {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -143,7 +142,7 @@ li>label {
 }
 
 li>input[type="text"] {
-    width: 326px
+    width: 326px;
 }
 
 .img-remove {
@@ -169,12 +168,12 @@ li>input[type="text"] {
 
 /* Edit Task */
 ul li input[type=text] {
-    display: none
+    display: none;
 }
 
 ul li.edit input[type=text] {
     display: inline-block;
-    width: 324px
+    width: 324px;
 }
 
 ul li.edit label {
