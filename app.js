@@ -7,7 +7,6 @@
 
 
 // Event handling, user interaction is what starts the code execution.
-
 var taskInput = document.getElementById("new-tasks");//Add a new task.
 var addButton = document.getElementsByTagName("button")[0];//first button
 var incompleteTaskHolder = document.getElementById("incomplete-tasks");//ul of #incompleteTasks
@@ -16,40 +15,30 @@ var completedTasksHolder = document.querySelector(".complet");//ul of completed
 
 //New task list item
 var createNewTaskElement = function (taskString) {
-
-    var listItem = document.createElement("li");
-
     //input (checkbox)
     var checkBox = document.createElement("input");//checkbx
+    var listItem = document.createElement("li");
     //label
     var label = document.createElement("label");//label
     //input (text)
     var editInput = document.createElement("input");//text
     //button.edit
     var editButton = document.createElement("button");//edit button
-
     //button.delete
     var deleteButton = document.createElement("button");//delete button
     var deleteButtonImg = document.createElement("img");//delete button image
-
     label.innerText = taskString;
     label.className = 'label-task';
-
     //Each elements, needs appending
     checkBox.type = "checkbox";
     editInput.type = "text";
     editInput.className = "text-task";
-
     editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
     editButton.className = "edit";
-
     deleteButton.className = "delete";
     deleteButtonImg.src = './remove.svg';
     deleteButtonImg.className = "img-remove"
-
     deleteButton.appendChild(deleteButtonImg);
-
-
     //and appending.
     listItem.appendChild(checkBox);
     listItem.appendChild(label);
